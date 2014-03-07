@@ -1,24 +1,16 @@
+# KDR
 
-    _        _
-   | |  _   | |
-   | | / )__| | __
-   | |/ // _  |/ _)
-   |  _ ( (_| | |
-   |_| \_\____|_|
-
-
-    # Prezto & Vundle
-
-    sh -c "`curl -fsSL https://raw.github.com/kerbyfc/kdr/master/install.sh`"
-
-## What is KDR? 
-
-**KDR is an opinionated dotfile repo based on [YADR](https://github.com/skwp/dotfiles)**
+**KDR is a dotfile repo based on [YADR](https://github.com/skwp/dotfiles)**
 
   * The best bits of all the top dotfile repos, vim and zsh plugins curated in one place, into a simple and cohesive way of working.
   * More than 90 vim plugins, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
   * Many zsh plugins, starting with the wonderful Prezto base, and adding a few niceties on top.
   * All things are vimized: irb, postres command line, etc.
+
+
+    # prezto & vundle
+
+    sh -c "`curl -fssl https://raw.github.com/kerbyfc/kdr/master/install.sh`"
 
 ## Screenshot
 
@@ -28,7 +20,6 @@
 
 To get started please run:
 
-```bash
 sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
 ```
 
