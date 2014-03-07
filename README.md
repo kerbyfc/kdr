@@ -1,31 +1,24 @@
-     _     _           _
-    | |   | |         | |
-    | |___| |_____  __| | ____
-    |_____  (____ |/ _  |/ ___)
-     _____| / ___ ( (_| | |
-    (_______\_____|\____|_|
 
-    # Yet Another Dotfile Repo v1.1
-    # Now with Prezto and Vundle!
+    _        _
+   | |  _   | |
+   | | / )__| | __
+   | |/ // _  |/ _)
+   |  _ ( (_| | |
+   |_| \_\____|_|
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
 
-**Always be sure to run `rake update` after pulling to ensure plugins are updated**
+    # Prezto & Vundle
 
-## What is YADR?
+    sh -c "`curl -fsSL https://raw.github.com/kerbyfc/kdr/master/install.sh`"
 
-**YADR is an opinionated dotfile repo that will make your heart sing**
+## What is KDR? 
+
+**KDR is an opinionated dotfile repo based on [YADR](https://github.com/skwp/dotfiles)**
 
   * The best bits of all the top dotfile repos, vim and zsh plugins curated in one place, into a simple and cohesive way of working.
   * More than 90 vim plugins, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
   * Many zsh plugins, starting with the wonderful Prezto base, and adding a few niceties on top.
   * All things are vimized: irb, postres command line, etc.
-
-## Mailing List
-
-Got questions, concerns, want to hear announcements? Join the [Google Group](https://groups.google.com/forum/#!forum/yadr-users)
-
-Please use GitHub Issues for pull requests or bug reports only.
 
 ## Screenshot
 
@@ -51,27 +44,6 @@ sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s a
 * Install iTerm Solarized Colors - YADR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
 * [Remap caps-lock to escape with PCKeyboardHack](http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html) - The escape key is the single most used key in vim.  Old keyboards used to have Escape where Tab is today. Apple keyboards are the worst with their tiny Esc keys. But all this is fixed by remapping Caps to Escape.  If you're hitting a small target in the corner, you are slowing yourself down considerably, and probably damaging your hands with repetitive strain injuries.
 * Remap your Alfred or Spotlight to `Ctrl-Cmd-Space`, so that you can use `Cmd-Space` to autocomplete in vim. This is much more friendly for your fingers than `Ctrl-n`.
-
-### Upgrading
-
-Upgrading is easy.
-
-```bash
-cd ~/.yadr
-git pull --rebase
-rake update
-```
-
-## What's included, and how to customize?
-
-Read on to learn what YADR provides!
-
-### [Homebrew](http://mxcl.github.com/homebrew/)
-
-Homebrew is _the missing package manager for OSX_. Installed automatically.
-
-We automatically install a few useful packages including ctags, git, macvim, hub, and the silver searcher ('ag')
-Note that our autocomplete plugin requires a MacVim that supports Lua. The installer knows how to install it, but if you had one installed before, you may need to manually remove your old MacVim.
 
 ### ZSH
 
@@ -114,7 +86,7 @@ It is recommended to use this file to set your user info. Alternately, you can s
   * Slightly improved colors for diff
 
 ### RubyGems
-
+/* TODO */
 A .gemrc is included. Never again type `gem install whatever --no-ri --no-rdoc`. `--no-ri --no-rdoc` is done by default.
 
 ### Tmux configuration
