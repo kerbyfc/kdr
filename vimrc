@@ -19,6 +19,12 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 
+if has("gui_running")
+  set guifont=Menlo:h12
+  set fuopt+=maxhorz
+  set fu
+endif
+
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
@@ -102,7 +108,6 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
-
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
