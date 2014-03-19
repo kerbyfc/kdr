@@ -8,9 +8,11 @@
   * All things are vimized: irb, postres command line, etc.
 
 
-    # prezto & vundle
+# prezto & vundle
 
-    sh -c "`curl -fssl https://raw.github.com/kerbyfc/kdr/master/install.sh`"
+```
+sh -c "`curl -fssl https://raw.github.com/kerbyfc/kdr/master/install.sh`"
+```
 
 ## Screenshot
 
