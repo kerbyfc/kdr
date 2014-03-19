@@ -1,6 +1,6 @@
 # KDR
 
-**KDR is a dotfile repo based on [YADR](https://github.com/skwp/dotfiles)**
+**KDR is a dotfile repo based on [KDR](https://github.com/skwp/dotfiles)**
 
   * The best bits of all the top dotfile repos, vim and zsh plugins curated in one place, into a simple and cohesive way of working.
   * More than 90 vim plugins, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
@@ -23,7 +23,7 @@ To get started please run:
 sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
 ```
 
-**Note:** YADR will automatically install all of its subcomponents. If you want to be asked
+**Note:** KDR will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 
 ```bash
@@ -32,7 +32,7 @@ sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s a
 
 ## Wait, you're not done! Do this:
 
-* Install iTerm Solarized Colors - YADR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
+* Install iTerm Solarized Colors - KDR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
 * [Remap caps-lock to escape with PCKeyboardHack](http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html) - The escape key is the single most used key in vim.  Old keyboards used to have Escape where Tab is today. Apple keyboards are the worst with their tiny Esc keys. But all this is fixed by remapping Caps to Escape.  If you're hitting a small target in the corner, you are slowing yourself down considerably, and probably damaging your hands with repetitive strain injuries.
 * Remap your Alfred or Spotlight to `Ctrl-Cmd-Space`, so that you can use `Cmd-Space` to autocomplete in vim. This is much more friendly for your fingers than `Ctrl-n`.
 
@@ -46,7 +46,7 @@ We've also provided lots of enhancements:
 * `Ctrl-x,Ctrl-l` to insert output of last command
 * Fuzzy matching - if you mistype a directory name, tab completion will fix it
 * [fasd](https://github.com/clvv/fasd) integration - hit `z` and partial match for recently used directory. Tab completion enabled.
-* [Prezto - the power behind YADR's zsh](http://github.com/sorin-ionescu/prezto)
+* [Prezto - the power behind KDR's zsh](http://github.com/sorin-ionescu/prezto)
 * [How to add your own ZSH theme](doc/zsh/themes.md)
 
 ### Aliases
@@ -60,7 +60,7 @@ mnemonic aliases. Please feel free to edit them:
 
 ### Git Customizations:
 
-YADR will take over your `~/.gitconfig`, so if you want to store your usernames, please put them into `~/.gitconfig.user`
+KDR will take over your `~/.gitconfig`, so if you want to store your usernames, please put them into `~/.gitconfig.user`
 
 It is recommended to use this file to set your user info. Alternately, you can set the appropriate environment variables in your `~/.secrets`.
 
@@ -103,7 +103,7 @@ We include the `ghi` command. Try `ghi list` and have fun managing issues from c
  * [Utils - indents, paste buffer management, lots more](doc/vim/utils.md)
  * [General enhancements that don't add new commands](doc/vim/enhancements.md)
 
-A list of some of the most useful commands that YADR provides in vim are
+A list of some of the most useful commands that KDR provides in vim are
 included below. This is not a comprehensive list. To get deeper knowledge,
 practice a few of these every day, and then start looking into the lists
 of plugins above to learn more.
@@ -207,7 +207,7 @@ of plugins above to learn more.
  * `,vc` - (Vim Command) copies the command under your cursor and executes it in vim. Great for testing single line changes to vimrc.
  * `,vr` - (Vim Reload) source current file as a vim file
 
-## Extending and overriding YADR settings
+## Extending and overriding KDR settings
 
 * [Debugging vim keymappings](doc/vim/keymaps.md)
 * [Overriding vim settings with ~/.vimrc.after and friends](doc/vim/override.md)
@@ -238,6 +238,6 @@ These hacks are Lion-centric. May not work for other OS'es. My favorite mods inc
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger by installing [pry-nav](https://github.com/nixme/pry-nav).
 
-[Learn more about YADR's pry customizations and how to install](doc/pry.md)
+[Learn more about KDR's pry customizations and how to install](doc/pry.md)
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/skwp/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
