@@ -1,9 +1,12 @@
 " ========================================
-" Kerby.fc
+" KDR
 " ========================================
 "
-" delete buffer without closing window
-
+" navigation
+nnoremap <D-h> ^
+nnoremap <D-l> $
+inoremap <D-h> <C-O>I
+inoremap <D-l> <C-O>A
 " ========================================
 " General vim sanity improvements
 " ========================================
@@ -23,13 +26,6 @@ nnoremap Y y$
 function! YRRunAfterMaps()
   nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
 endfunction
-
-" Make 0 go to the first character rather than the beginning
-" of the line. When we're programming, we're almost always
-" interested in working with text rather than empty space. If
-" you want the traditional beginning of line, use ^
-nnoremap 0 ^
-nnoremap ^ 0
 
 " ========================================
 " RSI Prevention - keyboard remaps
@@ -96,15 +92,6 @@ nnoremap <D-]> f]ci]
 "Go to last edit location with ,.
 nnoremap ,. '.
 
-"When typing a string, your quotes auto complete. Move past the quote
-"while still in insert mode by hitting Ctrl-a. Example:
-"
-" type 'foo<c-a>
-"
-" the first quote will autoclose so you'll get 'foo' and hitting <c-a> will
-" put the cursor right after the quote
-imap <C-a> <esc>wa
-
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
 nmap <D-N> :NERDTreeToggle<CR>
@@ -129,12 +116,17 @@ autocmd FileType javascript map <buffer> <D-j> {
 
 
 " Command-/ to toggle comments
-map <D-/> :TComment<CR>
-imap <D-/> <Esc>:TComment<CR>i
+map <silent> <D-/> gcc <Esc>
+vmap <D-/> gc
+"imap <D-/> <C-o> <D-/> # TODO
 
+:inoremap <C-h> <C-o>h
+:inoremap <C-j> <C-o>j
+:inoremap <C-k> <C-o>k
+:inoremap <C-l> <C-o>l
 
 "Move back and forth through previous and next buffers
-"with ,z and ,x
+" "with ,z and ,x
 nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
@@ -169,8 +161,8 @@ map <silent> <D-9> :tabn 9<cr>
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss
-nnoremap <silent> vv <C-w>v
-nnoremap <silent> ss <C-w>s
+" nnoremap <silent> <D-M-|> <C-w>v
+" nnoremap <silent> <D-M-_> <C-w>s
 
 " Resize windows with arrow keys
 nnoremap <D-Up> <C-w>+
@@ -179,10 +171,10 @@ nnoremap <D-Left> <C-w><
 nnoremap <D-Right>  <C-w>>
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
+" imap <silent> <C-K> <%=   %><Esc>3hi
 
 " create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
+" imap <silent> <C-J> <%  %><Esc>2hi
 
 " ============================
 " Shortcuts for everyday tasks

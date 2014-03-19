@@ -47,7 +47,7 @@ function prompt_kylewest_setup {
   # vcs
   zstyle ':prezto:module:git:info:branch' format '%F{yellow}%b%f'
   zstyle ':prezto:module:git:info:dirty' format '%B%F{red} ●%f%b'
-  zstyle ':prezto:module:git:info:keys' format 'prompt' '- %b%D '
+  zstyle ':prezto:module:git:info:keys' format 'prompt' '%F{cyan}❯ %b%D '
 
   # prompts
   PROMPT='%F{cyan}%c%f ${git_info[prompt]}${editor_info[keymap]} '

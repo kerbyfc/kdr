@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ ! -d "$HOME/.yadr" ]; then
-    echo "Installing YADR for the first time"
-    git clone https://github.com/skwp/dotfiles.git "$HOME/.yadr"
-    cd "$HOME/.yadr"
+if [ ! -d "$HOME/.kdr" ]; then
+    echo "Installing KDR for the first time"
+    git clone https://github.com/kerbyfc/kdr.git "$HOME/.kdr"
+    cd "$HOME/.kdr"
     [ "$1" == "ask" ] && export ASK="true"
     rake install
 else
-    echo "YADR is already installed"
+    echo "KDR is already installed"
 fi
