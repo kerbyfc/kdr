@@ -2,7 +2,7 @@
 "Bundle "tomtom/tcomment_vim.git"
 
 Bundle "tpope/vim-commentary"
-Bundle "ndrewRadev/splitjoin.vim"
+Bundle "AndrewRadev/splitjoin.vim"
 Bundle "Raimondi/delimitMate"
 Bundle "Shougo/neocomplete.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
