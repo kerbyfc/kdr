@@ -1,6 +1,6 @@
 # KDR
 
-**KDR is a dotfile repo based on [KDR](https://github.com/skwp/dotfiles)**
+**KDR is a dotfile repo based on [YADR](https://github.com/skwp/dotfiles)**
 
   * The best bits of all the top dotfile repos, vim and zsh plugins curated in one place, into a simple and cohesive way of working.
   * More than 90 vim plugins, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
