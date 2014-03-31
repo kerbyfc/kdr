@@ -6,6 +6,4 @@ if [ ! -d "$HOME/.kdr" ]; then
     cd "$HOME/.kdr"
     [ "$1" == "ask" ] && export ASK="true"
     rake install
-else
-    echo "KDR is already installed"
 fi
