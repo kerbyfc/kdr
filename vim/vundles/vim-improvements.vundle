@@ -1,22 +1,30 @@
-"Bundle "tpope/vim-ragtag"
-"Bundle "tomtom/tcomment_vim.git"
+" removed -
+" Bundle "tpope/vim-ragtag"
+" Bundle "tomtom/tcomment_vim.git"
+" Bundle "skwp/YankRing.vim"
+" Bundle "vim-scripts/camelcasemotion.git"
 
+" approved -
+Bundle "bufexplorer.zip"
 Bundle "tpope/vim-commentary"
+Bundle "goldfeld/ctrlr.vim"
+
+" awaiting check -
+Bundle "terryma/vim-multiple-cursors"
+
+" not checked -
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "Raimondi/delimitMate"
 Bundle "Shougo/neocomplete.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "godlygeek/tabular"
-Bundle "vim-scripts/camelcasemotion.git"
 Bundle "vim-scripts/matchit.zip.git"
-Bundle "terryma/vim-multiple-cursors"
 Bundle "Keithbsmiley/investigate.vim"
 Bundle "chrisbra/NrrwRgn"
 Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "bogado/file-line.git"
 Bundle "mattn/webapi-vim.git"
 Bundle "sjl/gundo.vim"
-Bundle "skwp/YankRing.vim"
 Bundle "tomtom/tlib_vim.git"
 Bundle "tpope/vim-abolish"
 Bundle "tpope/vim-endwise.git"
@@ -27,5 +35,4 @@ Bundle "vim-scripts/AnsiEsc.vim.git"
 Bundle "vim-scripts/AutoTag.git"
 Bundle "vim-scripts/lastpos.vim"
 Bundle "vim-scripts/sudo.vim"
-Bundle "terryma/vim-multiple-cursors"
-Bundle "goldfeld/ctrlr.vim"
+

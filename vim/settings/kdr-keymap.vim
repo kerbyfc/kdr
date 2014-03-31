@@ -127,8 +127,8 @@ vmap <D-/> gc
 
 "Move back and forth through previous and next buffers
 " "with ,z and ,x
-nnoremap <silent> ,z :bp<CR>
-nnoremap <silent> ,x :bn<CR>
+nnoremap <silent> <D-[> :bp<CR>
+nnoremap <silent> <D-]> :bn<CR>
 
 " ==============================
 " Window/Tab/Split Manipulation
