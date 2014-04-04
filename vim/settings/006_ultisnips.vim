@@ -1,5 +1,3 @@
-let g:UltiSnipsSnippetDirectories=["usnippets"]
-
 function! MySpace()
   if pumvisible()
     call UltiSnips#ExpandSnippet()
@@ -13,6 +11,6 @@ function! MySpace()
   endif
 endfunction
 
+let g:UltiSnipsListSnippets = "<C-s>"
 :inoremap <silent> <Space> <C-R>=MySpace()<CR>
 map ,us :vsp \| UltiSnipsEdit<CR>
-
