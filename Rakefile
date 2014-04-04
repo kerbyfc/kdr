@@ -108,6 +108,13 @@ task :install_vundle do
   end
 
   Vundle::update_vundle
+
+  puts "===================================================="
+  puts "Installing YouCompleteMe"
+  puts "===================================================="
+  run! %{
+    bash $HOME/.kdr/vim/bundle/YouCompleteMe/install.sh
+  }
 end
 
 task :default => 'install'
@@ -117,6 +124,11 @@ private
 def run(cmd)
   puts "[Running] #{cmd}"
   `#{cmd}` unless ENV['DEBUG']
+end
+
+def run!(cmd)
+  puts "[Running] #{cmd}"
+  `#{cmd}`
 end
 
 def number_of_cores
