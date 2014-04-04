@@ -3,25 +3,27 @@
 " Bundle "tomtom/tcomment_vim.git"
 " Bundle "skwp/YankRing.vim"
 " Bundle "vim-scripts/camelcasemotion.git"
+" Bundle "Shougo/neocomplete.git" => USE YouCompleteMe
+" Bundle "AndrewRadev/splitjoin.vim" => not often cases
+" Bundle "briandoll/change-inside-surroundings.vim.git" => USE ci[/{/'/" etc instead
+" Bundle "Keithbsmiley/investigate.vim" => Use dash with alfred 2
+" Bundle "chrisbra/NrrwRgn" => I dont use this, yet
+" Bundle "MarcWeber/vim-addon-mw-utils.git" => unusable sheet
 
 " approved -
 Bundle "bufexplorer.zip"
 Bundle "tpope/vim-commentary"
 Bundle "goldfeld/ctrlr.vim"
+Bundle "SirVer/ultisnips"
+Bundle "Valloric/YouCompleteMe"
+Bundle "Raimondi/delimitMate"
+Bundle "godlygeek/tabular"
 
 " awaiting check -
 Bundle "terryma/vim-multiple-cursors"
+Bundle "vim-scripts/matchit.zip.git"
 
 " not checked -
-Bundle "AndrewRadev/splitjoin.vim"
-Bundle "Raimondi/delimitMate"
-Bundle "Shougo/neocomplete.git"
-Bundle "briandoll/change-inside-surroundings.vim.git"
-Bundle "godlygeek/tabular"
-Bundle "vim-scripts/matchit.zip.git"
-Bundle "Keithbsmiley/investigate.vim"
-Bundle "chrisbra/NrrwRgn"
-Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "bogado/file-line.git"
 Bundle "mattn/webapi-vim.git"
 Bundle "sjl/gundo.vim"
