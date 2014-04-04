@@ -113,7 +113,9 @@ task :install_vundle do
   puts "Installing YouCompleteMe"
   puts "===================================================="
   run! %{
-    bash $HOME/.kdr/vim/bundle/YouCompleteMe/install.sh
+    cd $HOME/.kdr/vim/bundle/YouCompleteMe
+    bash install.sh --clang-completer
+    cd $HOME/.kdr
   }
 end
 
@@ -162,7 +164,7 @@ end
 
 def install_homebrew
   run %{which brew}
-  unless $?.success?
+  unless ENV['DEBUG'] || $?.success?
     puts "======================================================"
     puts "Installing Homebrew, the OSX package manager...If it's"
     puts "already installed, this will do nothing."
