@@ -17,22 +17,9 @@ call vundle#rc()
 " let Vundle manage Vundle (required)
 Bundle "gmarik/vundle"
 
-" KDR's vundles are split up by category into smaller files
-" This reduces churn and makes it easier to fork. See
-" ~/.vim/vundles/ to edit them:
-runtime appearance.vundle
-runtime misc.vundle
-runtime completion.vundle
-runtime navigation.vundle
-runtime refactoring.vundle
-runtime syntax.vundle
-runtime versioning.vundle
-
-" The plugins listed in ~/.vim/.vundles.local will be added here to
-" allow the user to add vim plugins to kdr without the need for a fork.
-if filereadable(expand("~/.kdr/vim/.vundles.local"))
-  source ~/.kdr/vim/.vundles.local
-endif
+for fpath in split(globpath('~/.vim/vundles', '*.vundle'), '\n')
+  exe 'runtime' split(fpath, '/')[-1]
+endfor
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

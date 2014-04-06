@@ -1,5 +1,6 @@
-Bundle "bogado/file-line.git"
 Bundle "mattn/webapi-vim.git"
 Bundle "tomtom/tlib_vim.git"
 Bundle "vim-scripts/AnsiEsc.vim.git"
 Bundle "waylan/vim-markdown-extra-preview"
+Bundle "xolox/vim-misc"
+Bundle "xolox/vim-session"

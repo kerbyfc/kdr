@@ -9,9 +9,14 @@ Bundle "xolox/vim-misc"
 Bundle "xolox/vim-session"
 Bundle "scrooloose/nerdtree.git"
 Bundle "kien/ctrlp.vim"
+Bundle "bling/vim-airline"
+Bundle "bogado/file-line.git"
 
 " buffers
 Bundle "bufexplorer.zip"
 
 " tags
 Bundle "vim-scripts/AutoTag.git"
+
+" marks
+Bundle "xsunsmile/showmarks.git"
