@@ -1,22 +1,23 @@
-" tabs
-Bundle "jistr/vim-nerdtree-tabs.git"
-
-" global
-Bundle "vim-scripts/lastpos.vim"
-Bundle "lokaltog/vim-easymotion"
-Bundle "rking/ag.vim"
-Bundle "xolox/vim-misc"
-Bundle "xolox/vim-session"
+" ui
 Bundle "scrooloose/nerdtree.git"
-Bundle "kien/ctrlp.vim"
+Bundle "jistr/vim-nerdtree-tabs.git"
 Bundle "bling/vim-airline"
-Bundle "bogado/file-line.git"
+Bundle "rking/ag.vim"
+Bundle "kien/ctrlp.vim"
+
+" file
+Bundle "lokaltog/vim-easymotion"
 
 " buffers
 Bundle "bufexplorer.zip"
 
 " tags
+Bundle "majutsushi/tagbar"
 Bundle "vim-scripts/AutoTag.git"
+Bundle "lukaszkorecki/CoffeeTags"
 
 " marks
 Bundle "xsunsmile/showmarks.git"
+
+" misc
+Bundle "bogado/file-line.git"
