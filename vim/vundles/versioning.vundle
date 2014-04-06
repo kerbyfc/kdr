@@ -1,5 +1,5 @@
 " global
-Bundle "sjl/gundo.vim"
+Bundle "mbbill/undotree"
 
 " git
 Bundle "gregsexton/gitv"

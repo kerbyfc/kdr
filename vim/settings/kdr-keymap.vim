@@ -161,8 +161,8 @@ map <silent> <D-9> :tabn 9<cr>
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss
-" nnoremap <silent> <D-M-|> <C-w>v
-" nnoremap <silent> <D-M-_> <C-w>s
+nnoremap <silent> vv <c-w>v
+nnoremap <silent> ss <c-w>s
 
 " Resize windows with arrow keys
 nnoremap <D-Up> <C-w>+
