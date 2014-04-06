@@ -1,3 +1,7 @@
+" global
+Bundle "sjl/gundo.vim"
+
+" git
 Bundle "gregsexton/gitv"
 Bundle "mattn/gist-vim"
 Bundle "tpope/vim-fugitive"

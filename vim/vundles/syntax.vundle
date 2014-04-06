@@ -1,0 +1,30 @@
+" global
+Bundle "scrooloose/syntastic.git"
+
+" ruby
+Bundle "vim-ruby/vim-ruby.git"
+Bundle "Keithbsmiley/rspec.vim"
+
+" javascript lang family
+Bundle "gfxmonk/vim-stratifiedjs"
+Bundle "pangloss/vim-javascript"
+Bundle "othree/javascript-libraries-syntax.vim"
+Bundle "kchmck/vim-coffee-script"
+Bundle "itspriddle/vim-jquery.git"
+
+" tests
+Bundle "claco/jasmine.vim"
+
+" css
+Bundle "groenewege/vim-less.git"
+
+" templates
+Bundle "tpope/vim-haml"
+Bundle "digitaltoad/vim-jade.git"
+Bundle "briancollins/vim-jst"
+Bundle "slim-template/vim-slim"
+Bundle "nelstrom/vim-markdown-preview"
+
+" others
+Bundle "jtratner/vim-flavored-markdown.git"
+Bundle "waylan/vim-markdown-extra-preview"

@@ -1,0 +1,17 @@
+" tabs
+Bundle "jistr/vim-nerdtree-tabs.git"
+
+" global
+Bundle "vim-scripts/lastpos.vim"
+Bundle "lokaltog/vim-easymotion"
+Bundle "rking/ag.vim"
+Bundle "xolox/vim-misc"
+Bundle "xolox/vim-session"
+Bundle "scrooloose/nerdtree.git"
+Bundle "kien/ctrlp.vim"
+
+" buffers
+Bundle "bufexplorer.zip"
+
+" tags
+Bundle "vim-scripts/AutoTag.git"
