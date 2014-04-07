@@ -17,7 +17,7 @@ Bundle "vim-scripts/AutoTag.git"
 Bundle "lukaszkorecki/CoffeeTags"
 
 " marks
-Bundle "xsunsmile/showmarks.git"
+Bundle "kshenoy/vim-signature"
 
 " misc
 Bundle "bogado/file-line.git"

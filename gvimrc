@@ -34,7 +34,7 @@
 set transparency=3
 if has("gui_macvim")
   call system("defaults write org.vim.MacVim NSUserKeyEquivalents -dict-add 'Hide MacVim' '@\$H'")
-  macm File.New\ Tab key=<nop>
+  " macm File.New\ Tab key=<nop>
   macm File.Close\ Window key=<nop>
   macm Tools.List\ Errors key=<nop>
   macm File.Save key=<nop>
