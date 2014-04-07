@@ -4,7 +4,8 @@ let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_TreeNodeShape = "*"
 let g:undotree_WindowLayout = 3
 
-nmap ,u :UndotreeToggle<CR>
+" nmap ,u :UndotreeToggle<CR>
+noremap <C-u> :UndotreeToggle<CR>
 
 if has("persistent_undo")
     set undodir = "~/.undodir/"
