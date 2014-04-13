@@ -109,14 +109,14 @@ task :install_vundle do
 
   Vundle::update_vundle
 
-  #puts "===================================================="
-  #puts "Installing YouCompleteMe"
-  #puts "===================================================="
-  #run! %{
-  #  cd $HOME/.kdr/vim/bundle/YouCompleteMe
-  #  bash install.sh --clang-completer
-  #  cd $HOME/.kdr
-  #}
+  puts "===================================================="
+  puts "Installing YouCompleteMe"
+  puts "===================================================="
+  run! %{
+    cd $HOME/.kdr/vim/bundle/YouCompleteMe
+    bash install.sh
+    cd $HOME/.kdr
+  }
 end
 
 task :default => 'install'
