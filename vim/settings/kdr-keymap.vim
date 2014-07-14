@@ -7,6 +7,8 @@ nnoremap <D-h> ^
 nnoremap <D-l> $
 inoremap <D-h> <C-O>I
 inoremap <D-l> <C-O>A
+
+nnoremap <C-q> :q<CR>
 " ========================================
 " General vim sanity improvements
 " ========================================
@@ -35,13 +37,6 @@ endfunction
 " dashes are very common, and in position that require
 " a lot of hand movement. Vim to the rescue
 "
-" Now using the middle finger of either hand you can type
-" underscores with apple-k or apple-d, and add Shift
-" to type dashes
-imap <silent> <D-k> _
-imap <silent> <D-d> _
-imap <silent> <D-K> -
-imap <silent> <D-D> -
 
 " ,# Surround a word with #{ruby interpolation}
 map ,# ysiw#
@@ -107,13 +102,6 @@ nmap <silent> ,qo :copen<CR>
 " which will move us around by functions
 nnoremap <silent> <D-j> }
 nnoremap <silent> <D-k> {
-autocmd FileType ruby map <buffer> <D-j> ]m
-autocmd FileType ruby map <buffer> <D-k> [m
-autocmd FileType rspec map <buffer> <D-j> }
-autocmd FileType rspec map <buffer> <D-k> {
-autocmd FileType javascript map <buffer> <D-k> }
-autocmd FileType javascript map <buffer> <D-j> {
-
 
 " Command-/ to toggle comments
 map <silent> <D-/> gcc <Esc>

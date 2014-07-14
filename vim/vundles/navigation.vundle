@@ -1,7 +1,6 @@
 " ui
 Bundle "scrooloose/nerdtree.git"
 Bundle "jistr/vim-nerdtree-tabs.git"
-Bundle "bling/vim-airline"
 Bundle "rking/ag.vim"
 Bundle "kien/ctrlp.vim"
 

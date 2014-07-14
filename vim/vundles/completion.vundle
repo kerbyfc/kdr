@@ -1,9 +1,12 @@
 " global
 Bundle "Raimondi/delimitMate"
 Bundle "SirVer/ultisnips"
+" Bundle "honza/vim-snippets"
 Bundle "Valloric/YouCompleteMe"
 Bundle "tpope/vim-repeat.git"
 
 " ruby
 Bundle "tpope/vim-endwise.git"
 
+" coffee
+Bundle "kerbyfc/vimCoffeeJsDocs"

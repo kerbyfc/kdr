@@ -14,3 +14,9 @@ endfunction
 let g:UltiSnipsListSnippets = "<C-s>"
 :inoremap <silent> <Space> <C-R>=MySpace()<CR>
 map ,us :vsp \| UltiSnipsEdit<CR>
+
+let g:UltiSnipsJumpForwardTrigger="<C-x>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

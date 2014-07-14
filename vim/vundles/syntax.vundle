@@ -12,6 +12,9 @@ Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "itspriddle/vim-jquery.git"
 
+" erlang
+Bundle "jimenezrick/vimerl"
+
 " tests
 Bundle "claco/jasmine.vim"
 
@@ -27,4 +30,3 @@ Bundle "nelstrom/vim-markdown-preview"
 
 " others
 Bundle "jtratner/vim-flavored-markdown.git"
-Bundle "waylan/vim-markdown-extra-preview"
