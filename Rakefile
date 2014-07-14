@@ -114,7 +114,7 @@ task :install_vundle do
   puts "===================================================="
   run! %{
     cd $HOME/.kdr/vim/bundle/YouCompleteMe
-    bash install.sh --clang-completer
+    bash install.sh
     cd $HOME/.kdr
   }
 end
