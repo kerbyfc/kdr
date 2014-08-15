@@ -103,6 +103,9 @@ nmap <silent> ,qo :copen<CR>
 nnoremap <silent> <D-j> }
 nnoremap <silent> <D-k> {
 
+vmap <D-j> }
+vmap <D-k> {
+
 " Command-/ to toggle comments
 map <silent> <D-/> gcc <Esc>
 vmap <D-/> gc

@@ -17,6 +17,7 @@ function! Theme(name)
   exe 'colorscheme' a:name
   exe 'source' '~/.vim/settings/099_colors.vim'
 endfunction
+
 command! -nargs=* Theme call Theme( '<args>' )
 
 " set background
@@ -28,3 +29,23 @@ command! -nargs=* SetBg call SetBg( '<args>' )
 nnoremap <Leader>bg :SetBg
 
 au VimEnter * so ~/.vim/settings/099_colors.vim
+
+call Theme("monokai")
+
+function! GitBranchesContains()
+  let cwd = getcwd()
+  lcd %:p:h
+  let blame = substitute(system("export TERM=cygwin && git blame " . expand('%:p')), '\n$', '', '')
+  let commit = split( split(blame, "\n")[line('.')-1] , " ")[0]
+  let commit = substitute(commit, '\W', '', '')
+  if commit == "00000000"
+    let result = "not commited"
+  else
+    let result = substitute(system("git branch -a --contains " . commit), '\n$', '', '')
+  end
+  execute 'lcd' fnameescape(cwd)
+  return result
+endfunction
+
+command! -nargs=* GitBranchesContains echo GitBranchesContains()
+nnoremap ,gb :echo GitBranchesContains()<CR>
