@@ -6,6 +6,7 @@ Bundle "kien/ctrlp.vim"
 
 " file
 Bundle "lokaltog/vim-easymotion"
+Bundle "tpope/vim-vinegar"
 
 " buffers
 Bundle "bufexplorer.zip"

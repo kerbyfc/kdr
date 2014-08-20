@@ -30,4 +30,4 @@ Bundle "nelstrom/vim-markdown-preview"
 
 " others
 Bundle "jtratner/vim-flavored-markdown.git"
-Bundle "mustache/vim-mustache-handlebarst"
+Bundle "mustache/vim-mustache-handlebars"
