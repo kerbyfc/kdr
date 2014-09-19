@@ -111,10 +111,10 @@ map <silent> <D-/> gcc <Esc>
 vmap <D-/> gc
 "imap <D-/> <C-o> <D-/> # TODO
 
-:inoremap <C-h> <C-o>h
-:inoremap <C-j> <C-o>j
-:inoremap <C-k> <C-o>k
-:inoremap <C-l> <C-o>l
+" :inoremap <C-h> <C-o>h
+" :inoremap <C-j> <C-o>j
+" :inoremap <C-k> <C-o>k
+" :inoremap <C-l> <C-o>l
 
 "Move back and forth through previous and next buffers
 " "with ,z and ,x

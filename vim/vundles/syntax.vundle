@@ -11,6 +11,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "itspriddle/vim-jquery.git"
+Bundle "dart-lang/dart-vim-plugin"
 
 " erlang
 Bundle "jimenezrick/vimerl"
