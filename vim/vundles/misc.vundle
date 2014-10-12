@@ -5,3 +5,6 @@ Bundle "waylan/vim-markdown-extra-preview"
 Bundle "xolox/vim-misc"
 Bundle "xolox/vim-session"
 Bundle "vim-scripts/lastpos.vim"
+
+" macros
+Bundle "vim-scripts/marvim"

@@ -18,6 +18,8 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set ruler
+
 
 if has("gui_running")
   set guifont=Menlo:h12
@@ -35,7 +37,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -52,7 +54,7 @@ set noswapfile
 set nobackup
 set nowb
 
-" ================ Persistent Undo ==================
+" =============== Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 if has('persistent_undo')

@@ -49,3 +49,6 @@ endfunction
 
 command! -nargs=* GitBranchesContains echo GitBranchesContains()
 nnoremap ,gb :echo GitBranchesContains()<CR>
+
+set ruler
+set statusline=%F\ %l\:%c
