@@ -20,14 +20,6 @@ endfunction
 
 command! -nargs=* Theme call Theme( '<args>' )
 
-" set background
-function! SetBg(type)
-  exe 'set background=' . a:type
-  exe 'source' '~/.vim/settings/099_colors.vim'
-endfunction
-command! -nargs=* SetBg call SetBg( '<args>' )
-nnoremap <Leader>bg :SetBg
-
 au VimEnter * so ~/.vim/settings/099_colors.vim
 
 call Theme("monokai")
