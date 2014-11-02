@@ -12,6 +12,8 @@ Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "itspriddle/vim-jquery.git"
 Bundle "dart-lang/dart-vim-plugin"
+Bundle "mxw/vim-xhp"
+Bundle "mxw/vim-jsx"
 
 " erlang
 Bundle "jimenezrick/vimerl"
@@ -28,6 +30,10 @@ Bundle "digitaltoad/vim-jade.git"
 Bundle "briancollins/vim-jst"
 Bundle "slim-template/vim-slim"
 Bundle "nelstrom/vim-markdown-preview"
+
+" xml
+Bundle "othree/xml.vim"
+Bundle "sukima/xmledit"
 
 " others
 Bundle "jtratner/vim-flavored-markdown.git"

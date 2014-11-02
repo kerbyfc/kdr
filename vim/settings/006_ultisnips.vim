@@ -1,22 +1,24 @@
-function! MySpace()
-  if pumvisible()
-    call UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res == 0
-      return " "
+function! g:UltiSnips_Complete()
+  call UltiSnips#ExpandSnippet()
+  if g:ulti_expand_res == 0
+    if pumvisible()
+      return "\<C-n>"
     else
-      return ""
+      call UltiSnips#JumpForwards()
+      if g:ulti_jump_forwards_res == 0
+        return "\<TAB>"
+      endif
     endif
-  else
-    return " "
   endif
+  return ""
 endfunction
 
-let g:UltiSnipsListSnippets = "<C-s>"
-:inoremap <silent> <Space> <C-R>=MySpace()<CR>
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+
+let g:UltiSnipsListSnippets="<c-e>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+
 map ,us :vsp \| UltiSnipsEdit<CR>
 
-let g:UltiSnipsJumpForwardTrigger="<C-l>"
-let g:UltiSnipsJumpBackwardTrigger="<C-h>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories=["ultisnips"]

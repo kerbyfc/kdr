@@ -1,46 +1,39 @@
-if has("gui_running")
-  set t_Co=256
-  autocmd VimEnter * set guitablabel=%N:\ %t\ %M
-  set lines=80
-  set columns=200
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ XL\ 10,Inconsolata\ 15,Monaco\ 12
-  else
-    set guifont=Menlo:h12
-  end
-else
-  let g:CSApprox_loaded = 1
-endif
+" favorite themes
+let t:themes = ['solarized', 'molokai', 'tomorrow-night']
+let t:themefile = '/.theme'
 
-" set theme
-function! Theme(name)
-  exe 'colorscheme' a:name
-  exe 'source' '~/.vim/settings/099_colors.vim'
+" set theme and save it to theme file
+function! Theme(...)
+  let theme = a:1
+  let bg = a:0 > 1 ? a:2 : 'dark'
+  let themefile = a:0 > 2 ? a:3.t:themefile : expand('~/.vim'.t:themefile)
+  if !(filereadable(themefile))
+    sil exe '!touch' themefile
+  endif
+  call writefile( [theme, bg], themefile )
+  sil exe 'source' '~/.vim/settings/099_colors.vim'
 endfunction
 
-command! -nargs=* Theme call Theme( '<args>' )
+" set theme for current project
+function! ProjTheme(...)
+  let bg = a:0 > 1 ? a:2 : 'dark'
+  let dir = getcwd()
+  call Theme(a:1, bg, dir)
+endfunction
+
+" fix current theme for project
+function! FixTheme(...)
+  let theme = sil exe 'colorscheme'
+  ProjTheme(theme) " TODO pass also the background setting
+endfunction
+
+" favorite themes autocomplete
+function! ThemesList(...)
+  return len(a:1) > 0 ? filter(copy(t:themes), 'v:val =~ "'.a:1.'"') : t:themes
+endfunction
+
+command! -complete=customlist,ThemesList -nargs=* Theme call Theme(<f-args>)
+command! -complete=customlist,ThemesList -nargs=* ProjTheme call ProjTheme(<f-args>)
+command! -nargs=* FixTheme call FixTheme(<f-args>)
 
 au VimEnter * so ~/.vim/settings/099_colors.vim
-
-call Theme("monokai")
-
-function! GitBranchesContains()
-  let cwd = getcwd()
-  lcd %:p:h
-  let blame = substitute(system("export TERM=cygwin && git blame " . expand('%:p')), '\n$', '', '')
-  let commit = split( split(blame, "\n")[line('.')-1] , " ")[0]
-  let commit = substitute(commit, '\W', '', '')
-  if commit == "00000000"
-    let result = "not commited"
-  else
-    let result = substitute(system("git branch -a --contains " . commit), '\n$', '', '')
-  end
-  execute 'lcd' fnameescape(cwd)
-  return result
-endfunction
-
-command! -nargs=* GitBranchesContains echo GitBranchesContains()
-nnoremap ,gb :echo GitBranchesContains()<CR>
-
-set ruler
-set statusline=%F\ %l\:%c

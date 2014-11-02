@@ -1,7 +1,7 @@
 " global
+Bundle "szw/vim-tags"
 Bundle "Raimondi/delimitMate"
 Bundle "SirVer/ultisnips"
-" Bundle "honza/vim-snippets"
 Bundle "Valloric/YouCompleteMe"
 Bundle "tpope/vim-repeat.git"
 
@@ -10,3 +10,6 @@ Bundle "tpope/vim-endwise.git"
 
 " coffee
 Bundle "kerbyfc/vimCoffeeJsDocs"
+
+" html
+Bundle "tpope/vim-ragtag"

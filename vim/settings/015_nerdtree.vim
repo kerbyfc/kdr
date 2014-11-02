@@ -8,3 +8,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 let g:nerdtree_tabs_open_on_gui_startup = 0
 let g:nerdtree_tabs_focus_on_files = 1
+
+let NERDTreeIgnore=['\.o$', '\~$', '\.DS_Store']
+
+" Cmd-Shift-N for nerd tree
+nmap <D-N> :NERDTreeToggle<CR>

@@ -5,6 +5,20 @@ if has("gui_running")
   set fu
 endif
 
+if has("gui_running")
+  set t_Co=256
+  autocmd VimEnter * set guitablabel=%N:\ %t\ %M
+  set lines=80
+  set columns=200
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ XL\ 10,Inconsolata\ 15,Monaco\ 12
+  else
+    set guifont=Menlo:h12
+  end
+else
+  let g:CSApprox_loaded = 1
+endif
+
 if has("gui_macvim")
   " deny hide on cmd-h
   call system("defaults write org.vim.MacVim NSUserKeyEquivalents -dict-add 'Hide MacVim' '@\$H'")

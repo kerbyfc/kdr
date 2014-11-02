@@ -112,7 +112,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.kdr/git/gitignore
+	excludesfile = /Users/kerbyfc/.gitignore_global
 	quotepath = false
 [advice]
   statusHints = false

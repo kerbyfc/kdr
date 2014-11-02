@@ -8,6 +8,8 @@ if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
 
+let $VIMHOME=expand('<sfile>:p:h:h')
+
 " ================ General Config ====================
 
 set number                      "Line numbers are good
@@ -19,6 +21,10 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set ruler
+
+" ctags
+set exrc
+set secure
 
 
 if has("gui_running")
@@ -34,6 +40,10 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+syntax enable
+set regexpengine=1
+" set dark background by default
+set background=dark
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x

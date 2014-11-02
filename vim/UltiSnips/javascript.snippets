@@ -1,0 +1,80 @@
+snippet log
+console.log($1);
+endsnippet
+
+snippet fn
+function($1) {
+	$2
+}
+endsnippet
+
+snippet ->
+function(${1:arguments}) {
+	$0
+}
+endsnippet
+
+snippet ngApp
+angular.module("${1:App}", [$2]);
+endsnippet
+
+snippet ngMod
+angular.module("${1:App}")
+endsnippet
+
+snippet ngDir "Angular directive (.directive ...)"
+.directive("${2:directive_name}", [${3:injections}, function(${3/\'//g}){
+	return {
+		restrict: "${4:A}",
+		link: function(scope, elem, attrs) {
+			$0
+		}
+	}
+}]);
+endsnippet
+
+snippet react
+React.createClass({
+
+	mixins: [$1],
+
+	getDefaultProps: function() {
+		return {$3};
+	},
+
+	getInialState: function() {
+		return {$4};
+	},
+
+	render: function() {
+		return (
+			$0
+		)
+	}
+
+})
+endsnippet
+
+snippet req
+require('$1');
+endsnippet
+
+snippet rprop
+React.PropTypes.$1
+endsnippet
+
+snippet brocTools
+var pick  = require('broccoli-static-compiler');
+var merge = require('broccoli-merge-trees');
+endsnippet
+
+snippet brocEs6
+var es6   = require('broccoli-6to5-transpiler');
+endsnippet
+
+snippet bPick
+pick('${1:src}', {
+	srcDir: '/${2}',
+	destDir: '/${3}'
+});
+endsnippet

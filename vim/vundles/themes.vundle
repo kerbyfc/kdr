@@ -1,6 +1,6 @@
 Bundle 'noahfrederick/vim-hemisu'
 Bundle 'endel/vim-github-colorscheme'
-Bundle 'chriskempson/tomorrow-theme'
+Bundle 'ChrisKempson/Tomorrow-Theme'
 Bundle 'gregsexton/Gravity'
 Bundle 'gregsexton/Muon'
 Bundle 'gregsexton/Atom'
