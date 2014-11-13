@@ -1,5 +1,6 @@
 " global
-Bundle "scrooloose/syntastic.git"
+" TODO fix it, its to lazy
+" Bundle "scrooloose/syntastic.git"
 
 " ruby
 Bundle "vim-ruby/vim-ruby.git"

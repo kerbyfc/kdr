@@ -1,11 +1,6 @@
+# COMMON -----------------------------------------
 snippet log
-console.log($1);
-endsnippet
-
-snippet fn
-function($1) {
-	$2
-}
+console.log(${1:this});
 endsnippet
 
 snippet ->
@@ -14,6 +9,7 @@ function(${1:arguments}) {
 }
 endsnippet
 
+# ANGULAR JS -------------------------------------
 snippet ngApp
 angular.module("${1:App}", [$2]);
 endsnippet
@@ -31,6 +27,13 @@ snippet ngDir "Angular directive (.directive ...)"
 		}
 	}
 }]);
+endsnippet
+
+
+
+# REACT ------------------------------------------
+snippet rprop
+React.PropTypes.$1
 endsnippet
 
 snippet react
@@ -55,13 +58,12 @@ React.createClass({
 })
 endsnippet
 
+# COMOON JS --------------------------------------
 snippet req
 require('$1');
 endsnippet
 
-snippet rprop
-React.PropTypes.$1
-endsnippet
+# BROCCOLI ---------------------------------------
 
 snippet brocTools
 var pick  = require('broccoli-static-compiler');
@@ -78,3 +80,4 @@ pick('${1:src}', {
 	destDir: '/${3}'
 });
 endsnippet
+# BROCCOLI ---------------------------------------

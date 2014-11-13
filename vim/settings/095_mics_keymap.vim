@@ -44,3 +44,6 @@ nmap <silent> // :nohlsearch<CR>
 map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
 
 nnoremap <Leader>sf :so %<CR>
+
+" unmap !man <occurance> on K
+nmap K <Nop>

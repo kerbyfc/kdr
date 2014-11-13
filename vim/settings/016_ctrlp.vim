@@ -7,7 +7,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 else
   " Fall back to using git ls-files if Ag is not available
-  let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn|\.idea|\.node_modules|\.bower_components$'
+  let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn|\.idea|\.node_modules|\.bower_components'
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
@@ -20,5 +20,8 @@ let g:ctrlp_open_multiple_files = 'v'
 nnoremap <silent> <C-b> :CtrlPBuffer<CR>
 nnoremap <silent> <C-f> :CtrlP<CR>
 
+
+nnoremap <silent> <C-r> :CtrlPFunky<Cr>
+
 " Cmd-Shift-P to clear the cache
-nnoremap <silent> <D-P> :ClearCtrlPCache<CR>
+nnoremap <D-P> :ClearCtrlPCache<CR>

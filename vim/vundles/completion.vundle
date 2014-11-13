@@ -1,5 +1,7 @@
 " global
+" FIXME its to slow
 Bundle "szw/vim-tags"
+
 Bundle "Raimondi/delimitMate"
 Bundle "SirVer/ultisnips"
 Bundle "Valloric/YouCompleteMe"

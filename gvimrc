@@ -31,7 +31,7 @@
 " nmap <D-w> :call Bclose()<CR>
 " nmap <C-D-w> <Esc> :tabclose<CR>
 "
-set transparency=3
+set transparency=5
 if has("gui_macvim")
   call system("defaults write org.vim.MacVim NSUserKeyEquivalents -dict-add 'Hide MacVim' '@\$H'")
   " macm File.New\ Tab key=<nop>
