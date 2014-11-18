@@ -17,7 +17,7 @@ call vundle#rc()
 " let Vundle manage Vundle (required)
 Bundle "gmarik/vundle"
 
-for fpath in split(globpath('~/.vim/vundles', '*.vundle'), '\n')
+for fpath in split(globpath('~/.vim/vundles', '*.vim'), '\n')
   exe 'runtime' split(fpath, '/')[-1]
 endfor
 

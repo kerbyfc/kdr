@@ -20,5 +20,5 @@ function! GitBranchesContains(...)
   return result
 endfunction
 
-command! -nargs=* GitBranchesContains echoif m GitBranchesContains(<f-args>)
-nnoremap ,gb :echo GitBranchesContains()<CR>
+command! -nargs=* GitBranchesContains echo GitBranchesContains(<f-args>)
+nnoremap ,gb :echo GitBranchesContains('')<CR>

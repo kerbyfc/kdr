@@ -19,6 +19,3 @@ Bundle "bogado/file-line.git"
 " CtrlP
 Bundle "kien/ctrlp.vim"
 Bundle "tacahiroy/ctrlp-funky"
-
-Bundle "kerbyfc/ctrlp-git-ext"
-

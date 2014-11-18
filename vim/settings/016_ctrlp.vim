@@ -19,9 +19,9 @@ let g:ctrlp_open_multiple_files = 'v'
 
 nnoremap <silent> <C-b> :CtrlPBuffer<CR>
 nnoremap <silent> <C-f> :CtrlP<CR>
+nnoremap <silent> <C-e> :CtrlPFunky<Cr>
+nnoremap <silent> <C-t> :CtrlPTag<Cr>
 
-
-nnoremap <silent> <C-r> :CtrlPFunky<Cr>
 
 " Cmd-Shift-P to clear the cache
 nnoremap <D-P> :ClearCtrlPCache<CR>

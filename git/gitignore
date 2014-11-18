@@ -20,6 +20,7 @@ Desktop.ini
 # Ignore tags created by etags and ctags
 TAGS
 tags
+Gemfile.lock.tags
 
 # Vim       taken from: https://github.com/github/gitignore/blob/master/Global/vim.gitignore
 # ----------------------------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Session.vim
 # SASS
 # ----------------------------------------------------------------------------------------------
 .sass-cache
+
+# MVIM THEME
+.theme
